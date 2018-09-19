@@ -1,51 +1,51 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication_Practice_Web.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style>
+        .myRegister {
+            float: right;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
   <table>
       <tr>
           <td>
-              <asp:Label runat="server" ID="lblProductId">Product Id</asp:Label>
+              <asp:Label runat="server" ID="lblUserName">User name </asp:Label>
           </td>
           <td>
-              <asp:TextBox runat="server" ID="txtProductId" ReadOnly="True"></asp:TextBox>
-          </td>
-      </tr>
-      <tr>
-          <td>
-              <asp:Label runat="server" ID="Label1">Product Name</asp:Label>
-          </td>
-          <td>
-              <asp:TextBox runat="server" ID="TextBox1"></asp:TextBox>
+              <asp:TextBox runat="server" ID="txtUserName"></asp:TextBox>
           </td>
       </tr>
       <tr>
           <td>
-              <asp:Label runat="server" ID="Label2">Product details</asp:Label>
+              <asp:Label runat="server" ID="lblPassword">Password</asp:Label>
           </td>
           <td>
-              <asp:TextBox runat="server" ID="TextBox2"></asp:TextBox>
-          </td>
-      </tr>
-      <tr>
-          <td>
-              <asp:Label runat="server" ID="Label3">Whole sale price</asp:Label>
-          </td>
-          <td>
-              <asp:TextBox runat="server" ID="TextBox3"></asp:TextBox>
+              <asp:TextBox runat="server" ID="txtPassword" type="password"></asp:TextBox>
           </td>
       </tr>
       <tr>
           <td>
-              <asp:Label runat="server" ID="Label4"></asp:Label>
+              <asp:Label runat="server" ID="lblConfPassword">Confirm password</asp:Label>
           </td>
           <td>
-              <asp:TextBox runat="server" ID="TextBox4"></asp:TextBox>
+              <asp:TextBox runat="server" ID="txtConfPassword" type="password"></asp:TextBox>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <asp:Label runat="server" ID="lblEmail">Email</asp:Label>
+          </td>
+          <td>
+              <asp:TextBox runat="server" ID="txtEmail"></asp:TextBox>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+            <asp:Button class="myRegister" runat="server" ID="btnRegister" Text="Register" 
+                  Width="80px" onclick="btnRegister_Click" 
+                />
           </td>
       </tr>
   </table>
-  
-  
-   
-   <asp:TextBox runat="server" ID="txtProductDetais"></asp:TextBox>
 </asp:Content>

@@ -7,11 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication_Practice_Web
 {
-    public partial class SiteMaster : System.Web.UI.MasterPage
+    public partial class page : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["userName"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
         }
     }
 }

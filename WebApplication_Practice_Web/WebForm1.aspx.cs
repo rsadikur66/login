@@ -13,7 +13,17 @@ namespace WebApplication_Practice_Web
         private readonly T0001Dal t0001Dal = new T0001Dal();
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            //if (Session["userName"] == null)
+            //{
+            //    Response.Redirect("login.aspx");
+            //}
+            
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

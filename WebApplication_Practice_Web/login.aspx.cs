@@ -21,9 +21,15 @@ namespace WebApplication_Practice_Web
             var login = _loginDal.GetLoginUserInfo(txtLoginName.Text.ToUpper(),txtLoginPassword.Text.ToUpper());
             if (login.Rows.Count == 0)
             {
-                ScriptManager.RegisterClientScriptBlock(this,GetType(),Guid.NewGuid().ToString(),"alert('Invalid Id or Password. Please try again.');",true);
+                ScriptManager.RegisterClientScriptBlock(this, GetType(), Guid.NewGuid().ToString(),
+                    "alert('Invalid Id or Password. Please try again.');", true);
             }
-            Response.Redirect("WebForm1.aspx");
+            else
+            {
+                Session["userName"] = txtLoginName.Text.ToUpper();
+                Response.Redirect("~/newForm.aspx");
+            }
+            
         }
     }
 }

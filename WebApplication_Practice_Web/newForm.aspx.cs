@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication_Practice_Web
 {
-    public partial class SiteMaster : System.Web.UI.MasterPage
+    public partial class newForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

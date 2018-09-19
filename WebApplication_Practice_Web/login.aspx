@@ -13,5 +13,11 @@
         </tr>
         <tr><td><asp:Button runat="server" ID="btnLogin" Text="Login" onclick="btnLogin_Click"/></td></tr>
     </table>
-
+    <div>
+        
+        <asp:HyperLink ID="HyperLink1" runat="server" >
+            <a href="WebForm1.aspx">Click here to register</a> If you are not register
+        </asp:HyperLink>
+        
+    </div>
 </asp:Content>
